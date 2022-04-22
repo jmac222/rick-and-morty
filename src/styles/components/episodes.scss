@@ -1,13 +1,13 @@
 *,
 *::after,
 *::before {
-  overflow-x: hidden;
+//   overflow-x: hidden;
   padding: 0;
   margin: 0;
   
 }
 body{
-    background-color: rgb(36, 40, 47);
+    background-color: rgb(36, 40, 47) !important;
 }
 
 .episodes{
@@ -30,13 +30,21 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    box-shadow: rgba(6, 44, 14, 0.4) 0px 0px 0px 2px, rgba(6, 44, 11, 0.65) 0px 4px 6px -1px, rgba(18, 88, 45, 0.08) 0px 1px 0px inset;
 }
 
 .episode h1, p, h2{
     color: whitesmoke;
     margin-bottom: 10px;
     text-align: center;
+    font-family: 'Akshar', sans-serif;
+}
+
+.episode h1{
+    color: aqua;
+    
+    -webkit-text-stroke: .4px rgb(11, 148, 18);
+    font-size: 40px;
 }
 
 
@@ -50,3 +58,42 @@ img{
     justify-content: center;
     width: 100vw;
 }
+
+
+
+  
+.dropbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a, button {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {background-color: #3e8e41;}
+  
