@@ -124,6 +124,54 @@ img {
   background-color: #3e8e41;
 }
 
+.character img {
+  width: 200px;
+  height: 200px;
+  border-radius: 5px 0 0 5px;
+}
+
+.character {
+  display: flex;
+  background-color: rgb(60, 62, 68);
+  width: 600px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.character .content {
+  margin: auto;
+}
+
+.character-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.status {
+  display: flex;
+  justify-content: center;
+}
+
+.status-icon {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-top: 5px;
+}
+
+.green {
+  background-color: green;
+}
+
+.red {
+  background-color: rgb(164, 28, 28);
+}
+
+.unknown {
+  background-color: grey;
+}
+
 .navbar {
   background-color: rgba(60, 62, 68, 0.582);
   border-bottom: 3px solid white;
