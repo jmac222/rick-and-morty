@@ -73,11 +73,13 @@ class Episodes extends React.Component {
             <h1>{episode.name}</h1>
             <h2>
               {episode.episode
-                .split("S")
+                .split("S0")
                 .join("Season ")
                 .split("E")
                 .join(" Episode ")
-                .split("0")}
+                .split(" Episode 0")
+                .join(' Episode ')
+                }
             </h2>
             <p>Released: {episode.air_date}</p>
           </div>
@@ -96,11 +98,14 @@ class Episodes extends React.Component {
             <h1>{episode.name}</h1>
             <h2>
               {episode.episode
-                .split("S")
+                .split("S0")
                 .join("Season ")
                 .split("E")
                 .join(" Episode ")
-                .split("0")}
+                .split(" Episode 0")
+                .join(' Episode ')
+              }
+                
             </h2>
             <p>Released: {episode.air_date}</p>
           </div>
@@ -119,11 +124,15 @@ class Episodes extends React.Component {
             <h1>{episode.name}</h1>
             <h2>
               {episode.episode
-                .split("S")
+                .split("S0")
                 .join("Season ")
                 .split("E")
                 .join(" Episode ")
-                .split("0")}
+                .split(" Episode 0")
+                .join(' Episode ')
+                }
+                
+                
             </h2>
             <p>Released: {episode.air_date}</p>
           </div>
@@ -149,10 +158,21 @@ class Episodes extends React.Component {
           <div class="dropdown-content">
             <button value = "s01" onClick={(e) => {
               this.setState({ season: e.target.value })
-            }}>Link 1</button>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
-          </div>
+            }}>Season 1</button>
+            <button value = "s02" onClick={(e) => {
+              this.setState({ season: e.target.value })
+            }}>Season 2</button>
+            <button value = "s03" onClick={(e) => {
+              this.setState({ season: e.target.value })
+            }}>Season 3</button>
+            <button value = "s04" onClick={(e) => {
+              this.setState({ season: e.target.value })
+            }}>Season 4</button>
+            <button value = "s05" onClick={(e) => {
+              this.setState({ season: e.target.value })
+            }}>Season 5</button>
+            </div>
+            
         </div>
 
         <div className="episodes">

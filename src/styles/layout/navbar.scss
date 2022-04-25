@@ -1,0 +1,29 @@
+.navbar{
+    background-color: rgba(60, 62, 68, 0.582);
+    border-bottom: 3px solid white;
+    position: fixed !important;
+    top: 0; 
+    width: 100%;
+    overflow: hidden;
+    z-index: 2;
+    margin-bottom: 20px;
+}
+
+.links{
+    display: flex;
+}
+
+h3{
+    margin: 10px;
+    text-decoration: none !important;
+    color: white;
+    font-family: 'Akshar', sans-serif;
+    
+}
+
+a{
+    text-decoration: none !important; 
+    color: white;
+    font-family: 'Akshar', sans-serif;
+    
+}
