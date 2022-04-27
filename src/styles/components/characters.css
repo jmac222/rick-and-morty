@@ -10,6 +10,7 @@
   width: 600px;
   margin: 10px;
   border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .character .content {
@@ -20,6 +21,8 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  width: 90vw;
+  margin: auto;
 }
 
 .status {

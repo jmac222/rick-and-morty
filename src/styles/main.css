@@ -45,7 +45,7 @@ body {
 
 .episode {
   background-color: rgb(60, 62, 68);
-  width: 20vw;
+  width: 333px;
   margin: 10px;
   padding: 5px;
   border-radius: 5px;
@@ -136,6 +136,7 @@ img {
   width: 600px;
   margin: 10px;
   border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .character .content {
@@ -146,6 +147,8 @@ img {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  width: 90vw;
+  margin: auto;
 }
 
 .status {
@@ -175,12 +178,15 @@ img {
 .navbar {
   background-color: rgba(60, 62, 68, 0.582);
   border-bottom: 3px solid white;
-  position: fixed !important;
+  position: -webkit-sticky !important;
+  position: sticky !important;
+  left: 0;
   top: 0;
   width: 100%;
-  overflow: hidden;
   z-index: 2;
   margin-bottom: 20px;
+  height: 90px;
+  line-height: 90px;
 }
 
 .links {
